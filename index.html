@@ -5,14 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio of Carsten Hennig</title>
-    <link
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Top nav bar 
+     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    -->
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/ff5c9c5b05.js"></script>
     <link rel="stylesheet" href="./mainstyle.css" />
   </head>
 
@@ -23,6 +29,7 @@
     <div class="navleft">
       <img src="./images/st_moritz_sun.png" class="sun" alt="St. Moritzer Sonne" />
     </div>
+    <h4 class="ghost"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i> This a ghost</h4>
     <div class="navright">
         <ul>
         <li><a href="http://digitalevangelists.de/" target="_blank">Digital Evangelists</a></li>
@@ -45,7 +52,7 @@
     </main>
 
     <!-- 2nd section: slider -->
-    <div class="sliderbox">
+    <div class="sliderbox m-5">
         <div class="slider">
             <a href="#slide-1">1</a>
             <a href="#slide-2">2</a>
@@ -57,34 +64,183 @@
         <div class="slides">
                 <div id="slide-1">
                     <h2 class="display-4">Holedo</h2>
-                    <p class="lead">Content marketing and communication, development of matrix-based chat solution for one-click applications</p>
+                    <p class="lead">Content marketing and communication, development of matrix-based chat solution for one-click applications 
+                      <a href="https://www.holedo.com/" target="_blank">
+                       <i class="fa fa-external-link" aria-hidden="true"></i>
+                      </a>
+                    </p>
                 </div>
                 <div id="slide-2">
                     <h2 class="display-4">Hotelier TV</h2>
-                    <p class="lead">Development of video publishing platform based on Vimeo, YouTube, SoundCloud</p>
+                    <p class="lead">Development of video publishing platform based on Vimeo, YouTube, SoundCloud 
+                    <a href="https://www.hoteliertv.net" target="_blank">
+                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                    </a>
+                    </p>
                 </div>
                 <div id="slide-3">
                     <h2 class="display-4">Digital Evangelists</h2>
-                    <p class="lead">Think tank and consulting boutique firm fro strong-forward digitization</p>
+                    <p class="lead">Think tank and consulting boutique firm fro strong-forward digitization 
+                    <a href="http://www.digitalevangelists.de/" target="_blank">
+                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                    </a>
+                    </p>
                 </div>
                 <div id="slide-4">
                     <h2 class="display-4">RealFireFighters</h2>
-                    <p class="lead">Development of digital publishing and community management for firefighters around the globe</p>
+                    <p class="lead">Development of digital publishing and community management for firefighters around the globe 
+                    <a href="https://www.instagram.com/realfirefighters/" target="_blank">
+                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                    </a>
+                    </p>
                 </div>
                 <div id="slide-5">
                     <h2 class="display-4">Aminta</h2>
-                    <p class="lead">Development of e-commerce strategy for fashion from Western Africa</p>
+                    <p class="lead">Development of e-commerce strategy for fashion from Western Africa 
+                    <a href="https://www.aminta.de/" target="_blank">
+                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                    </a>
+                    </p>
                 </div>
             </div>
     </div>
 
-    <hr>
+    <!-- 3rd section: cards grid -->
     
-    <div class="wrapper">
-      <div class="vid"></div>
-      <div class="partners"></div>
-      <div class="icons"></div>
+    <div class="cards_grid border" style="margin-top:100px">
+      
+      <div class="column">
+        <div class="card">
+          <div class="myButton">Beginner</div>
+          <h2 class="display-4">
+            Code
+          </h2>
+          <ul>
+            <li><i class="fa fa-code" aria-hidden="true"></i> HTML</li>
+            <li><i class="fa fa-css3" aria-hidden="true"></i> CSS</li>
+            <li><i class="fa fa-jsfiddle" aria-hidden="true"></i> JavaScript</li>
+            <li><i class="fa fa-microchip" aria-hidden="true"></i> Python</li>
+            <li><i class="fa fa-github" aria-hidden="true"></i> Git/Github</li>
+            <li><i class="fa fa-commenting-o" aria-hidden="true"></i> Jira</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <div class="myButton_adv">Advanced</div>
+          <h2 class="display-4">
+            CMS
+          </h2>
+          <ul>
+            <li><i class="fa fa-wordpress" aria-hidden="true"></i> Wordpress</li>
+            <li><i class="fa fa-file-text" aria-hidden="true"></i> Tpyo3</li>
+            <li><i class="fa fa-joomla" aria-hidden="true"></i> Joomla</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+        <div class="myButton_pro">Pro</div>
+        <h2 class="display-4">
+          Media
+        </h2>
+        <ul>
+          <li><i class="fa fa-camera" aria-hidden="true"></i> Adobe Photoshop</li>
+          <li><i class="fa fa-video-camera" aria-hidden="true"></i> Adobe Premiere Pro</li>
+          <li><i class="fa fa-play" aria-hidden="true"></i> WeVideo</li>
+        </ul>
+      </div>
     </div>
+
+      <div class="column">
+        <div class="card">
+        <div class="myButton_pro">Pro</div>
+        <h2 class="display-4">
+          Projects
+        </h2>
+        <ul>
+          <li><i class="fa fa-font" aria-hidden="true"></i> MS Office</li>
+          <li><i class="fa fa-unlock" aria-hidden="true"></i> Scrum</li>
+          <li><i class="fa fa-calendar-o" aria-hidden="true"></i> Kanban</li>
+        </ul>
+      </div>
+    </div>
+
+      <div class="column">
+        <div class="card">
+        <div class="myButton_adv">Advanced</div>
+        <h2 class="display-4">
+          Languages
+        </h2>
+        <ul>
+          <li><i class="fa fa-beer" aria-hidden="true"></i> German (native)</li>
+          <li><i class="fa fa-building" aria-hidden="true"></i> Business English (fluent)</li>
+          <li><i class="fa fa-coffee" aria-hidden="true"></i> French</li>
+          <li><i class="fa fa-snowflake-o" aria-hidden="true"></i> Russian</li>
+          <li><i class="fa fa-globe" aria-hidden="true"></i> Chinese / Mandarin</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+        <div class="myButton_pro">Pro</div>
+        <h2 class="display-4">
+          Leadership
+        </h2>
+        <ul>
+          <li><a href="https://vimeo.com/showcase/7337162" target="_blank"><i class="fa fa-television" aria-hidden="true"></i> TV anchorman</a></li>
+          <li><a href="https://youtu.be/WfR5zQHLcac" target="_blank"><i class="fa fa-male" aria-hidden="true"></i> Speaker</a></li>
+          <li><i class="fa fa-newspaper-o" aria-hidden="true"></i> Editor-in-chief</li>
+          <li><i class="fa fa-comment-o" aria-hidden="true"></i> Director of Communication</li>
+        </ul>
+      </div>
+    </div>
+
+      <div class="column">
+        <div class="card">
+        <div class="myButton_pro">Pro</div>
+        <h2 class="display-4">
+          Communication
+        </h2>
+        <ul>
+          <li><i class="fa fa-commenting" aria-hidden="true"></i> Public Relations</li>
+          <li><i class="fa fa-bell-o" aria-hidden="true"></i> Marketing c-level</li>
+          <li><i class="fa fa-comments-o" aria-hidden="true"></i> Internal communication</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    
+  <!-- 4th section: carousel -->
+
+  <div class="wrapper">
+  
+    <div class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2 class="display-3">Showreel 1</h2>
+            <div style='padding:56.25% 0 0 0;position:relative;'>
+             <iframe src='https://vimeo.com/showcase/7337162/embed' allowfullscreen frameborder='0' style='position:absolute;top:0;left:0;width:100%;height:300px;'>
+              </iframe>
+            </div>
+
+          </div>
+
+          <div class="carousel-item">
+            <h2 class="display-3">Showreel 2</h2>
+            <iframe width="100%" height="305" src="https://www.youtube.com/embed/videoseries?list=PLpy0SSeYWvY5ZB7cc-BjymxSJKzyYTju5" title="Videos HOTELIER TV on Youtube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="carousel-item">
+            <h2 class="display-3">Podcasts</h2>
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/51017596&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #CCCCCC;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/hoteliertv" title="hoteliertv" target="_blank" style="color: #CCCCCC; text-decoration: none;">hoteliertv</a> · <a href="https://soundcloud.com/hoteliertv/sets/good-morning-hoteliers" title="Good Morning, Hoteliers!" target="_blank" style="color: #CCCCCC; text-decoration: none;">Good Morning, Hoteliers!</a>
+            </div>            
+      </div>
+    </div>
+  </div>
 
     <footer>
       <ul>
@@ -93,5 +249,12 @@
         <li><a href="https://www.linkedin.com/in/carstenhennig" target="_blank">LinkedIn</a></li>
       </ul>
     </footer>
+
+
+    <!-- JavaScript Bundle -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
   </body>
 </html>

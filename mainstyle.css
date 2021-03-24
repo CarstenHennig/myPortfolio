@@ -11,6 +11,7 @@ body {
   background-color: #f0ecec;
 }
 
+/* Media Query for responsive web design */
 /* CSS for nav */
 nav {
   display: -webkit-box;
@@ -37,6 +38,83 @@ nav li {
 nav a {
   text-decoration: none;
   color: darkgrey;
+}
+
+nav a:hover {
+  color: darkgrey;
+  font-size: 150%;
+}
+
+.ghost {
+  opacity: 0;
+  margin: 15px;
+}
+
+.ghost:hover {
+  /*   opacity: 1;
+  color: #c6bc61;
+  font-size: larger;
+  filter: brightness(90%) blur(0.9px); */
+  -webkit-animation-name: ghost-animation;
+          animation-name: ghost-animation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes ghost-animation {
+  0% {
+    opacity: 0.3;
+    color: #c6bc61;
+    -webkit-filter: brightness(99%) blur(1px);
+            filter: brightness(99%) blur(1px);
+  }
+  33% {
+    opacity: 0.6;
+    color: #c69661;
+    -webkit-filter: brightness(94%) blur(0.9px);
+            filter: brightness(94%) blur(0.9px);
+  }
+  66% {
+    opacity: 1;
+    color: #c67061;
+    -webkit-filter: brightness(90%) blur(0.7px);
+            filter: brightness(90%) blur(0.7px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes ghost-animation {
+  0% {
+    opacity: 0.3;
+    color: #c6bc61;
+    -webkit-filter: brightness(99%) blur(1px);
+            filter: brightness(99%) blur(1px);
+  }
+  33% {
+    opacity: 0.6;
+    color: #c69661;
+    -webkit-filter: brightness(94%) blur(0.9px);
+            filter: brightness(94%) blur(0.9px);
+  }
+  66% {
+    opacity: 1;
+    color: #c67061;
+    -webkit-filter: brightness(90%) blur(0.7px);
+            filter: brightness(90%) blur(0.7px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.navleft img:hover {
+  width: 30%;
 }
 
 /* CSS for 1st section: main */
@@ -72,7 +150,7 @@ nav a {
   background-image: url(./images/signing_carsten_hennig.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 670px;
+  height: 750px;
   background-position: center bottom;
 }
 
@@ -111,6 +189,15 @@ nav a {
       scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+}
+
+.slides a {
+  text-decoration: none;
+  color: darkgrey;
+}
+
+.slides a:hover {
+  color: #5b5941;
 }
 
 #slide-1 {
@@ -225,6 +312,204 @@ nav a {
   background: #eee;
 }
 
+/* CSS for cards & buttons */
+/* Vertical scrollbar 
+.cards_grid::-webkit-scrollbar {
+  width: 1em;
+}
+
+.cards_grid::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #8ed4e0;
+}
+
+.cards_grid::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  outline: 1px solid darkgrey;
+} */
+.cards_grid {
+  overflow: auto;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cards_grid li {
+  list-style-type: none;
+}
+
+.cards_grid li:hover {
+  color: #86b59a;
+  font-size: larger;
+}
+
+.column {
+  float: left;
+  width: 55%;
+  padding: 0 10px;
+}
+
+.column a {
+  text-decoration: none;
+  color: black;
+}
+
+.column a:hover {
+  font-size: larger;
+  color: #5b5941;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  -webkit-box-shadow: 0 4px 8px 0 #5b5941;
+          box-shadow: 0 4px 8px 0 #5b5941;
+  padding: 16px;
+  text-align: left;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* CSS for: buutons */
+.myButton {
+  color: #f1f1f1;
+  width: 70px;
+  padding: 5px;
+  font-size: 10px;
+  line-height: 10px;
+  border-radius: 10px;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#8ed4e0), color-stop(50%, #636dc8), to(#114ab2));
+  background-image: linear-gradient(to right, #8ed4e0 0%, #636dc8 50%, #114ab2 100%);
+  -webkit-box-shadow: black 5px 5px 15px 5px;
+          box-shadow: black 5px 5px 15px 5px;
+  border: 2px solid #8ed4e0;
+  display: inline-block;
+}
+
+.myButton:hover {
+  background: #86b59a;
+  font-size: larger;
+  width: 80px;
+  padding: 7px;
+  font-size: 13px;
+  line-height: 13px;
+}
+
+.myButton:active {
+  background: #5b5941;
+}
+
+.myButton_adv {
+  color: #f1f1f1;
+  width: 65px;
+  padding: 5px;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#96bfa7), color-stop(50%, #9dd9e4), to(#7880cf));
+  background-image: linear-gradient(to right, #96bfa7 0%, #9dd9e4 50%, #7880cf 100%);
+  -webkit-box-shadow: black 5px 5px 15px 5px;
+          box-shadow: black 5px 5px 15px 5px;
+  border: 2px solid #636dc8;
+  display: inline-block;
+}
+
+.myButton_adv:hover {
+  background: #4854bf;
+  font-size: larger;
+  width: 80px;
+  padding: 7px;
+  font-size: 13px;
+  line-height: 13px;
+}
+
+.myButton_adv:active {
+  background: #3b46a7;
+}
+
+.myButton_pro {
+  color: #f1f1f1;
+  width: 40px;
+  padding: 5px;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#e08d8d), color-stop(50%, #c66161), to(#b21111));
+  background-image: linear-gradient(to right, #e08d8d 0%, #c66161 50%, #b21111 100%);
+  -webkit-box-shadow: black 5px 5px 15px 5px;
+          box-shadow: black 5px 5px 15px 5px;
+  border: 2px solid #9e1825;
+  display: inline-block;
+}
+
+.myButton_pro:hover {
+  background: #8a1f39;
+  font-size: larger;
+  width: 80px;
+  padding: 7px;
+  font-size: 13px;
+  line-height: 13px;
+}
+
+.myButton_pro:active {
+  background: #ba636e;
+}
+
+/* CSS for: carousel */
+.wrapper {
+  overflow: hidden;
+}
+
+.wrapper iframe {
+  height: 200px;
+  width: 100%;
+}
+
+.wrapper a {
+  text-decoration: none;
+  color: black;
+}
+
+.wrapper a:hover {
+  text-decoration: underline;
+}
+
+.wrapper img {
+  width: 560px;
+}
+
 /* CSS for footer */
 footer {
   width: 100%;
@@ -251,5 +536,9 @@ footer li {
 footer ul a {
   text-decoration: none;
   color: darkgrey;
+}
+
+footer ul a:hover {
+  font-size: 150%;
 }
 /*# sourceMappingURL=mainstyle.css.map */

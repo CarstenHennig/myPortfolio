@@ -39,7 +39,7 @@ nav li {
   position: right;
 }
 
-.sun {
+.sun img {
   width: 70px;
   margin: 10px;
 }
@@ -91,17 +91,12 @@ nav a:hover {
   }
 }
 
-.sun-text {
-  opacity: 0;
+.sun {
+  display: flex;
 }
 
 .navleft img:hover {
-  width: 30%;
-}
-
-.sun-text:hover {
-  opacity: 1;
-  display: block;
+  transform: scale(1.5);
 }
 
 /* CSS for 1st section: main */
